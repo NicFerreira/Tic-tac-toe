@@ -62,6 +62,7 @@ function resetGame() {
     updateCurrentPlayer();
 }
 
+//Função de jogada
 function makeMove(square) {
     const squareIndex = Array.from(square.parentNode.children).indexOf(square);
 
