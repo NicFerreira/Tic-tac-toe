@@ -85,6 +85,7 @@ function makeMove(square) {
     }
 }
 
+//Checagem de vencedor
 function checkWin(player) {
     for (const combination of winningCombinations) {
         const [a, b, c] = combination;
