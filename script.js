@@ -63,6 +63,7 @@ function resetGame() {
 }
 
 //Função de jogada
+//Novo comentário teste
 function makeMove(square) {
     const squareIndex = Array.from(square.parentNode.children).indexOf(square);
 
