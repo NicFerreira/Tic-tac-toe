@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <label class="p1label" for="player1Name">Jogador X</label>
+    <input type="text" id="player1Name" placeholder="Insira um nome">
+    <label class="p2label" for="player2Name">Jogador O</label>
+    <input type="text" id="player2Name" placeholder="Insira um nome">
+
+    <input type="button" id="startButton" value="Iniciar Jogo" onclick="startGame()">
+
+    <input type="text" id="currentPlayer" value="Vez de: X" disabled>
+
+    <div class="tic-tac-toe">
+        <div class="square" onclick="makeMove(this)"></div>
+        <div class="square" onclick="makeMove(this)"></div>
+        <div class="square" onclick="makeMove(this)"></div>
+        <div class="square" onclick="makeMove(this)"></div>
+        <div class="square" onclick="makeMove(this)"></div>
+        <div class="square" onclick="makeMove(this)"></div>
+        <div class="square" onclick="makeMove(this)"></div>
+        <div class="square" onclick="makeMove(this)"></div>
+        <div class="square" onclick="makeMove(this)"></div>
+    </div>
+    
+    <input type="button" id="resetButton" value="Reiniciar" onclick="resetGame()">
+</body>
+</html>

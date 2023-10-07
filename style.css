@@ -1,0 +1,86 @@
+/* Estilos para centralizar elementos */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Pixelify Sans', cursive;
+    background-color: #212529; /* Cor de fundo opcional */
+}
+
+.tic-tac-toe {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    width: 320px;
+    font-family: 'Pixelify Sans', cursive;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border-radius: .25rem;
+    cursor: pointer;
+    font-family: 'Pixelify Sans', cursive;
+    transition: background-color 0.2s; /* Transição suave para a mudança de cor */
+}
+
+.square.X {
+    background-color: red;
+    color: white;
+    font-size: 70px;
+    font-family: 'Pixelify Sans', cursive;
+}
+
+.square.O {
+    background-color: blue;
+    color: white;
+    font-size: 70px;
+    font-family: 'Pixelify Sans', cursive;
+}
+
+#player1Name,
+#player2Name,
+#resetButton,
+#startButton {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: .25rem;
+    font-family: 'Pixelify Sans', cursive;
+}
+
+.p1label {
+    color: red;
+}
+
+.p2label {
+    color: blue;
+}
+
+#currentPlayer {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 20px;
+    color: #eee;
+    border-radius: .25rem;
+    font-family: 'Pixelify Sans', cursive;
+    color: red; /* Por padrão, o texto é vermelho */
+}
+
+#currentPlayer.O {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 20px;
+    color: #eee;
+    border-radius: .25rem;
+    font-family: 'Pixelify Sans', cursive;
+    color: blue; /* Texto azul quando currentPlayer é 'O' */
+}
